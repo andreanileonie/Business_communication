@@ -144,7 +144,7 @@ dialog[open] .dlg{animation:rise .35s cubic-bezier(.2,.8,.2,1)}
 .track::-webkit-scrollbar{display:none}
 .slide{position:relative;flex:0 0 100%;scroll-snap-align:start;overflow:hidden;display:grid;place-items:center;background:#0a0705}
 .slide .blur{position:absolute;inset:-40px;width:calc(100% + 80px);height:calc(100% + 80px);max-width:none;object-fit:cover;filter:blur(30px) brightness(.45);transform:scale(1.1)}
-.slide img.main,.slide video{position:relative;width:100%;height:100%;object-fit:contain}
+.slide img.main,.slide video{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;object-position:center}
 .slide .cap{position:absolute;left:0;right:0;bottom:0;padding:44px 20px 16px;font-size:15px;background:linear-gradient(transparent,rgba(0,0,0,.85));display:flex;gap:12px;align-items:baseline;pointer-events:none}
 .slide.vid .cap{bottom:56px;background:none;padding-top:0;text-shadow:0 2px 8px #000}
 .slide .cap b{font-family:var(--type);font-weight:400;color:var(--tape);letter-spacing:.06em;white-space:nowrap}
@@ -401,7 +401,7 @@ const EX = [
   punch:'Paradise beaches and sloth selfies. Biologists from the University of Costa Rica say so many visitors change the way the animals behave.',
   obj:'The government allowed 3,000, not an algorithm. In 2023 a court ordered the limit back down to 1,120.'},
  {k:'everest',n:7,c:2,place:'Mount Everest',where:'Nepal · 22 May 2019, a queue at 8,850 m',lbl:'Everest',side:1,
-  media:[{src:'everest-1.jpg',cap:'The queue near the summit, May 2019'},{src:'everest-2.jpg',cap:'Rubbish left on the mountain'},{src:'everest-3.jpg',cap:'The Khumbu valley, on the way to Everest'}],
+  media:[{src:'everest-3.jpg',cap:'The Khumbu valley, on the way to Everest'},{src:'everest-1.jpg',cap:'The queue near the summit, May 2019'},{src:'everest-2.jpg',cap:'Rubbish left on the mountain'}],
   stats:[['885','summits in 2019, a record'],['85 t','of rubbish in spring 2024, 28 t of it human waste']],
   punch:'At that altitude nothing breaks down. Everest has become the highest rubbish dump in the world.',
   kaizen:'Inoxtag’s film Kaizen (2024): a beginner one year before, 24 million views in four days. The dream sold for about €50,000.',
